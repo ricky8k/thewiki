@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.3.0.747161471732">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.3.0.747245209629">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.3.0">
@@ -30,12 +30,12 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.3.0.747161471732" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.3.0.747245209629" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.3.0.747161471732" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.3.0.747245209629" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.3.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.3.0.747161471732" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.3.0.747161471732" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.3.0.747245209629" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.3.0.747245209629" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -176,9 +176,9 @@
 </doc-anchor-target>
 <p>When creating a torrent, the file is cut into several, smaller pieces, which are then put together by a peer&#x27;s <a href="../../getting-started/torrenting/#torrent-client">torrent client</a> to create the final result. These pieces are low in size and are used to facilitate peer-to-peer sharing, allowing for downloading and uploading to be much faster and seamless. However, there are some things to keep note of when setting the pieces for your torrent:</p>
 <ul>
-<li>Creating too small pieces can cause more protocol overhead, bigger torrent files, longer hashing times, and possibly higher load on the CPU and drive</li>
-<li>Creating too large pieces can slow down piece distribution</li>
-<li>Older torrent clients do not support piece sizes greater than 16 MiB. <em>Greater piece sizes are only a concern for torrents above ~5 TB</em></li>
+<li>Creating too <em>small</em> pieces can cause more protocol overhead, bigger torrent files, longer hashing times, and possibly higher load on the CPU and drive</li>
+<li>Creating too <em>large</em> pieces can slow down piece distribution</li>
+<li>Older torrent clients do not support piece sizes greater than 16 MiB. <em>Greater piece sizes are only a concern for torrents above ~5 TiB</em></li>
 <li>Most clients automatically pick too small piece sizes. <em><doc-anchor-trigger to="#dottorrent-gui">dottorrent-gui</doc-anchor-trigger> is an exception, as it aims for 1000-1500 pieces during creation</em></li>
 </ul>
 <p>We recommend targeting 1000 pieces, with 16 MiB being the upper limit. A quick reference is below:</p>
@@ -192,15 +192,15 @@
 </thead>
 <tbody>
 <tr>
-<td>2 to 4 GB</td>
+<td>2 to 4 GiB</td>
 <td>4 MiB</td>
 </tr>
 <tr>
-<td>4 to 8 GB</td>
+<td>4 to 8 GiB</td>
 <td>8 MiB</td>
 </tr>
 <tr>
-<td>8 to ∞ GB</td>
+<td>8 to ∞ GiB</td>
 <td>16 MiB</td>
 </tr>
 </tbody>
@@ -218,8 +218,8 @@
 http://anidex.moe:6969/announce
 udp://open.stealth.si:80/announce
 udp://tracker.opentrackr.org:1337/announce
-udp://exodus.desync.com:6969/announce
-udp://tracker.torrent.eu.org:451/announce</code></pre>
+udp://tracker.coppersurfer.tk:6969/announce
+udp://exodus.desync.com:6969/announce</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="creating">
     <h2>
@@ -372,9 +372,9 @@ udp://exodus.desync.com:6969/announce \
 </doc-panels>
 </doc-tab>
 </doc-tabs>
-<p>By default, torf heavily biases 8 MB piece size in situations where 16 MB would be more suitable. <em>We recommend performing the following edit to more aggressively target 1000 pieces:</em></p>
+<p>By default, torf-cli heavily biases 8 MiB piece size in situations where 16 MiB would be more suitable. <em>We recommend performing the following edit to more aggressively target 1000 pieces:</em></p>
 <ul>
-<li>Go to your torf install location (e.g. <code v-pre>%localappdata%\Programs\Python\Python311\Lib\site-packages\torf</code>)</li>
+<li>Go to your torf-cli install location (e.g. <code v-pre>%localappdata%\Programs\Python\Python311\Lib\site-packages\torf</code>)</li>
 <li>Open <code v-pre>_torrent.py</code> using your text editor and replace lines 723-728:</li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock>
