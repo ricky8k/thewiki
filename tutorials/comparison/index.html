@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752692607565">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.753392960005">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -32,12 +32,12 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.752692607565" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.753392960005" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.752692607565" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.753392960005" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.752692607565" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.752692607565" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.753392960005" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.753392960005" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -211,19 +211,20 @@
 <doc-tabs>
 <doc-tab v-cloak id="general-setup">
 <template #title>General Setup</template>
-<p><a href="https://github.com/Jaded-Encoding-Thaumaturgy/vs-preview">VSPreview</a> requires the following dependencies on top of <doc-anchor-trigger to="#vapoursynth">VapourSynth</doc-anchor-trigger>:</p>
+<p>We recommend installing the following additional dependencies for creating comparisons with <a href="https://github.com/Jaded-Encoding-Thaumaturgy/vs-preview">VSPreview</a>:</p>
 <ul>
 <li><a href="https://github.com/OpusGang/awsmfunc">awsmfunc</a></li>
 <li><a href="https://github.com/DJATOM/LibP2P-Vapoursynth">LibP2P</a></li>
 <li><a href="https://github.com/AkarinVS/L-SMASH-Works">LSMASHSource</a></li>
 <li><a href="https://github.com/vapoursynth/subtext">Subtext</a></li>
+<li><a href="https://github.com/Jaded-Encoding-Thaumaturgy/vs-kernels">vs-kernels</a></li>
 <li><a href="https://github.com/Lypheo/vs-placebo">vs-placebo</a></li>
 </ul>
 <doc-panel id="installation" collapsed>
     <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-1.5 0a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"/><path d="M12 1c.266 0 .532.009.797.028.763.055 1.345.617 1.512 1.304l.352 1.45c.019.078.09.171.225.221.247.089.49.19.728.302.13.061.246.044.315.002l1.275-.776c.603-.368 1.411-.353 1.99.147.402.349.78.726 1.128 1.129.501.578.515 1.386.147 1.99l-.776 1.274c-.042.069-.058.185.002.315.112.238.213.481.303.728.048.135.142.205.22.225l1.45.352c.687.167 1.249.749 1.303 1.512.038.531.038 1.063 0 1.594-.054.763-.616 1.345-1.303 1.512l-1.45.352c-.078.019-.171.09-.221.225-.089.248-.19.491-.302.728-.061.13-.044.246-.002.315l.776 1.275c.368.603.353 1.411-.147 1.99-.349.402-.726.78-1.129 1.128-.578.501-1.386.515-1.99.147l-1.274-.776c-.069-.042-.185-.058-.314.002a8.606 8.606 0 0 1-.729.303c-.135.048-.205.142-.225.22l-.352 1.45c-.167.687-.749 1.249-1.512 1.303-.531.038-1.063.038-1.594 0-.763-.054-1.345-.616-1.512-1.303l-.352-1.45c-.019-.078-.09-.171-.225-.221a8.138 8.138 0 0 1-.728-.302c-.13-.061-.246-.044-.315-.002l-1.275.776c-.603.368-1.411.353-1.99-.147-.402-.349-.78-.726-1.128-1.129-.501-.578-.515-1.386-.147-1.99l.776-1.274c.042-.069.058-.185-.002-.314a8.606 8.606 0 0 1-.303-.729c-.048-.135-.142-.205-.22-.225l-1.45-.352c-.687-.167-1.249-.749-1.304-1.512a11.158 11.158 0 0 1 0-1.594c.055-.763.617-1.345 1.304-1.512l1.45-.352c.078-.019.171-.09.221-.225.089-.248.19-.491.302-.728.061-.13.044-.246.002-.315l-.776-1.275c-.368-.603-.353-1.411.147-1.99.349-.402.726-.78 1.129-1.128.578-.501 1.386-.515 1.99-.147l1.274.776c.069.042.185.058.315-.002.238-.112.481-.213.728-.303.135-.048.205-.142.225-.22l.352-1.45c.167-.687.749-1.249 1.512-1.304C11.466 1.01 11.732 1 12 1Zm-.69 1.525c-.055.004-.135.05-.161.161l-.353 1.45a1.832 1.832 0 0 1-1.172 1.277 7.147 7.147 0 0 0-.6.249 1.833 1.833 0 0 1-1.734-.074l-1.274-.776c-.098-.06-.186-.036-.228 0a9.774 9.774 0 0 0-.976.976c-.036.042-.06.131 0 .228l.776 1.274c.314.529.342 1.18.074 1.734a7.147 7.147 0 0 0-.249.6 1.831 1.831 0 0 1-1.278 1.173l-1.45.351c-.11.027-.156.107-.16.162a9.63 9.63 0 0 0 0 1.38c.004.055.05.135.161.161l1.45.353a1.832 1.832 0 0 1 1.277 1.172c.074.204.157.404.249.6.268.553.24 1.204-.074 1.733l-.776 1.275c-.06.098-.036.186 0 .228.301.348.628.675.976.976.042.036.131.06.228 0l1.274-.776a1.83 1.83 0 0 1 1.734-.075c.196.093.396.176.6.25a1.831 1.831 0 0 1 1.173 1.278l.351 1.45c.027.11.107.156.162.16a9.63 9.63 0 0 0 1.38 0c.055-.004.135-.05.161-.161l.353-1.45a1.834 1.834 0 0 1 1.172-1.278 6.82 6.82 0 0 0 .6-.248 1.831 1.831 0 0 1 1.733.074l1.275.776c.098.06.186.036.228 0 .348-.301.675-.628.976-.976.036-.042.06-.131 0-.228l-.776-1.275a1.834 1.834 0 0 1-.075-1.733c.093-.196.176-.396.25-.6a1.831 1.831 0 0 1 1.278-1.173l1.45-.351c.11-.027.156-.107.16-.162a9.63 9.63 0 0 0 0-1.38c-.004-.055-.05-.135-.161-.161l-1.45-.353c-.626-.152-1.08-.625-1.278-1.172a6.576 6.576 0 0 0-.248-.6 1.833 1.833 0 0 1 .074-1.734l.776-1.274c.06-.098.036-.186 0-.228a9.774 9.774 0 0 0-.976-.976c-.042-.036-.131-.06-.228 0l-1.275.776a1.831 1.831 0 0 1-1.733.074 6.88 6.88 0 0 0-.6-.249 1.835 1.835 0 0 1-1.173-1.278l-.351-1.45c-.027-.11-.107-.156-.162-.16a9.63 9.63 0 0 0-1.38 0Z"/></g></g></svg> Installation</template>
-<p>You can install the following dependencies using <code v-pre>vsrepo.py</code> from <a href="https://github.com/vapoursynth/vapoursynth/releases">VapourSynth</a>:</p>
+<p>You can install <code v-pre>LibP2P</code>, <code v-pre>LSMASHSource</code>, <code v-pre>Subtext</code>, and <code v-pre>vs-placebo</code> using <code v-pre>vsrepo</code> from <a href="https://github.com/vapoursynth/vapoursynth/releases">VapourSynth</a>. In your terminal, run the following:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-powershell"><code v-pre class="language-powershell">vsrepo.py install lsmas libp2p sub placebo</code></pre>
+<pre class="language-powershell"><code v-pre class="language-powershell">vsrepo.py install libp2p lsmas sub placebo</code></pre>
 </doc-codeblock></div>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
@@ -238,12 +239,14 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>If <code v-pre>vsrepo.py</code> command doesn&#x27;t work, make sure Windows is set to open <code v-pre>.py</code> files with Python.</p>
+<p>If <code v-pre>vsrepo.py</code> command doesn&#x27;t work, make sure Windows is set to open <code v-pre>.py</code> files with Python. <em><a href="../../static/comparison/python-pathext.png">You may also need to add it to the <code v-pre>PATHEXT</code> environment variable.</a></em></p>
         </div>
     </div>
 </div>
+<p><code v-pre>awsmfunc</code> and <code v-pre>vs-kernels</code> can be installed using <code v-pre>pip</code>:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-powershell"><code v-pre class="language-powershell">pip install git+https://github.com/OpusGang/awsmfunc.git</code></pre>
+<pre class="language-powershell"><code v-pre class="language-powershell">pip install git+https://github.com/OpusGang/awsmfunc.git
+pip install vskernels --no-cache-dir -U</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 </doc-tab>
@@ -254,14 +257,15 @@
 <li><p><a href="https://github.com/quietvoid/dovi_tool">libdovi</a></p>
 <doc-panel id="installation" collapsed>
     <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-1.5 0a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"/><path d="M12 1c.266 0 .532.009.797.028.763.055 1.345.617 1.512 1.304l.352 1.45c.019.078.09.171.225.221.247.089.49.19.728.302.13.061.246.044.315.002l1.275-.776c.603-.368 1.411-.353 1.99.147.402.349.78.726 1.128 1.129.501.578.515 1.386.147 1.99l-.776 1.274c-.042.069-.058.185.002.315.112.238.213.481.303.728.048.135.142.205.22.225l1.45.352c.687.167 1.249.749 1.303 1.512.038.531.038 1.063 0 1.594-.054.763-.616 1.345-1.303 1.512l-1.45.352c-.078.019-.171.09-.221.225-.089.248-.19.491-.302.728-.061.13-.044.246-.002.315l.776 1.275c.368.603.353 1.411-.147 1.99-.349.402-.726.78-1.129 1.128-.578.501-1.386.515-1.99.147l-1.274-.776c-.069-.042-.185-.058-.314.002a8.606 8.606 0 0 1-.729.303c-.135.048-.205.142-.225.22l-.352 1.45c-.167.687-.749 1.249-1.512 1.303-.531.038-1.063.038-1.594 0-.763-.054-1.345-.616-1.512-1.303l-.352-1.45c-.019-.078-.09-.171-.225-.221a8.138 8.138 0 0 1-.728-.302c-.13-.061-.246-.044-.315-.002l-1.275.776c-.603.368-1.411.353-1.99-.147-.402-.349-.78-.726-1.128-1.129-.501-.578-.515-1.386-.147-1.99l.776-1.274c.042-.069.058-.185-.002-.314a8.606 8.606 0 0 1-.303-.729c-.048-.135-.142-.205-.22-.225l-1.45-.352c-.687-.167-1.249-.749-1.304-1.512a11.158 11.158 0 0 1 0-1.594c.055-.763.617-1.345 1.304-1.512l1.45-.352c.078-.019.171-.09.221-.225.089-.248.19-.491.302-.728.061-.13.044-.246.002-.315l-.776-1.275c-.368-.603-.353-1.411.147-1.99.349-.402.726-.78 1.129-1.128.578-.501 1.386-.515 1.99-.147l1.274.776c.069.042.185.058.315-.002.238-.112.481-.213.728-.303.135-.048.205-.142.225-.22l.352-1.45c.167-.687.749-1.249 1.512-1.304C11.466 1.01 11.732 1 12 1Zm-.69 1.525c-.055.004-.135.05-.161.161l-.353 1.45a1.832 1.832 0 0 1-1.172 1.277 7.147 7.147 0 0 0-.6.249 1.833 1.833 0 0 1-1.734-.074l-1.274-.776c-.098-.06-.186-.036-.228 0a9.774 9.774 0 0 0-.976.976c-.036.042-.06.131 0 .228l.776 1.274c.314.529.342 1.18.074 1.734a7.147 7.147 0 0 0-.249.6 1.831 1.831 0 0 1-1.278 1.173l-1.45.351c-.11.027-.156.107-.16.162a9.63 9.63 0 0 0 0 1.38c.004.055.05.135.161.161l1.45.353a1.832 1.832 0 0 1 1.277 1.172c.074.204.157.404.249.6.268.553.24 1.204-.074 1.733l-.776 1.275c-.06.098-.036.186 0 .228.301.348.628.675.976.976.042.036.131.06.228 0l1.274-.776a1.83 1.83 0 0 1 1.734-.075c.196.093.396.176.6.25a1.831 1.831 0 0 1 1.173 1.278l.351 1.45c.027.11.107.156.162.16a9.63 9.63 0 0 0 1.38 0c.055-.004.135-.05.161-.161l.353-1.45a1.834 1.834 0 0 1 1.172-1.278 6.82 6.82 0 0 0 .6-.248 1.831 1.831 0 0 1 1.733.074l1.275.776c.098.06.186.036.228 0 .348-.301.675-.628.976-.976.036-.042.06-.131 0-.228l-.776-1.275a1.834 1.834 0 0 1-.075-1.733c.093-.196.176-.396.25-.6a1.831 1.831 0 0 1 1.278-1.173l1.45-.351c.11-.027.156-.107.16-.162a9.63 9.63 0 0 0 0-1.38c-.004-.055-.05-.135-.161-.161l-1.45-.353c-.626-.152-1.08-.625-1.278-1.172a6.576 6.576 0 0 0-.248-.6 1.833 1.833 0 0 1 .074-1.734l.776-1.274c.06-.098.036-.186 0-.228a9.774 9.774 0 0 0-.976-.976c-.042-.036-.131-.06-.228 0l-1.275.776a1.831 1.831 0 0 1-1.733.074 6.88 6.88 0 0 0-.6-.249 1.835 1.835 0 0 1-1.173-1.278l-.351-1.45c-.027-.11-.107-.156-.162-.16a9.63 9.63 0 0 0-1.38 0Z"/></g></g></svg> Installation</template>
+<p>In your terminal, install <code v-pre>libdovi</code> using <code v-pre>vsrepo</code>:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-powershell"><code v-pre class="language-powershell">vsrepo.py install dovi_library</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 </li>
-<li><p><a href="https://github.com/AkarinVS/L-SMASH-Works/releases/tag/vA.5b">lsmas vA.5b</a></p>
+<li><p><a href="https://github.com/AkarinVS/L-SMASH-Works/releases/tag/vA.5b">lsmas (vA.5b)</a></p>
 <ul>
-<li><code v-pre>vsrepo</code> installs <code v-pre>A.3x</code> by default which does not support DV. <em><code v-pre>A.5x</code> is experimental and is not available on <code v-pre>vsrepo</code>, so you will have to install it manually</em></li>
+<li><code v-pre>vsrepo</code> installs <code v-pre>vA.3x</code> by default which does not support DV. <em><code v-pre>vA.5x</code> is experimental and is not available on <code v-pre>vsrepo</code>, so you will have to install it manually</em></li>
 </ul>
 <doc-panel id="installation" collapsed>
     <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-1.5 0a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"/><path d="M12 1c.266 0 .532.009.797.028.763.055 1.345.617 1.512 1.304l.352 1.45c.019.078.09.171.225.221.247.089.49.19.728.302.13.061.246.044.315.002l1.275-.776c.603-.368 1.411-.353 1.99.147.402.349.78.726 1.128 1.129.501.578.515 1.386.147 1.99l-.776 1.274c-.042.069-.058.185.002.315.112.238.213.481.303.728.048.135.142.205.22.225l1.45.352c.687.167 1.249.749 1.303 1.512.038.531.038 1.063 0 1.594-.054.763-.616 1.345-1.303 1.512l-1.45.352c-.078.019-.171.09-.221.225-.089.248-.19.491-.302.728-.061.13-.044.246-.002.315l.776 1.275c.368.603.353 1.411-.147 1.99-.349.402-.726.78-1.129 1.128-.578.501-1.386.515-1.99.147l-1.274-.776c-.069-.042-.185-.058-.314.002a8.606 8.606 0 0 1-.729.303c-.135.048-.205.142-.225.22l-.352 1.45c-.167.687-.749 1.249-1.512 1.303-.531.038-1.063.038-1.594 0-.763-.054-1.345-.616-1.512-1.303l-.352-1.45c-.019-.078-.09-.171-.225-.221a8.138 8.138 0 0 1-.728-.302c-.13-.061-.246-.044-.315-.002l-1.275.776c-.603.368-1.411.353-1.99-.147-.402-.349-.78-.726-1.128-1.129-.501-.578-.515-1.386-.147-1.99l.776-1.274c.042-.069.058-.185-.002-.314a8.606 8.606 0 0 1-.303-.729c-.048-.135-.142-.205-.22-.225l-1.45-.352c-.687-.167-1.249-.749-1.304-1.512a11.158 11.158 0 0 1 0-1.594c.055-.763.617-1.345 1.304-1.512l1.45-.352c.078-.019.171-.09.221-.225.089-.248.19-.491.302-.728.061-.13.044-.246.002-.315l-.776-1.275c-.368-.603-.353-1.411.147-1.99.349-.402.726-.78 1.129-1.128.578-.501 1.386-.515 1.99-.147l1.274.776c.069.042.185.058.315-.002.238-.112.481-.213.728-.303.135-.048.205-.142.225-.22l.352-1.45c.167-.687.749-1.249 1.512-1.304C11.466 1.01 11.732 1 12 1Zm-.69 1.525c-.055.004-.135.05-.161.161l-.353 1.45a1.832 1.832 0 0 1-1.172 1.277 7.147 7.147 0 0 0-.6.249 1.833 1.833 0 0 1-1.734-.074l-1.274-.776c-.098-.06-.186-.036-.228 0a9.774 9.774 0 0 0-.976.976c-.036.042-.06.131 0 .228l.776 1.274c.314.529.342 1.18.074 1.734a7.147 7.147 0 0 0-.249.6 1.831 1.831 0 0 1-1.278 1.173l-1.45.351c-.11.027-.156.107-.16.162a9.63 9.63 0 0 0 0 1.38c.004.055.05.135.161.161l1.45.353a1.832 1.832 0 0 1 1.277 1.172c.074.204.157.404.249.6.268.553.24 1.204-.074 1.733l-.776 1.275c-.06.098-.036.186 0 .228.301.348.628.675.976.976.042.036.131.06.228 0l1.274-.776a1.83 1.83 0 0 1 1.734-.075c.196.093.396.176.6.25a1.831 1.831 0 0 1 1.173 1.278l.351 1.45c.027.11.107.156.162.16a9.63 9.63 0 0 0 1.38 0c.055-.004.135-.05.161-.161l.353-1.45a1.834 1.834 0 0 1 1.172-1.278 6.82 6.82 0 0 0 .6-.248 1.831 1.831 0 0 1 1.733.074l1.275.776c.098.06.186.036.228 0 .348-.301.675-.628.976-.976.036-.042.06-.131 0-.228l-.776-1.275a1.834 1.834 0 0 1-.075-1.733c.093-.196.176-.396.25-.6a1.831 1.831 0 0 1 1.278-1.173l1.45-.351c.11-.027.156-.107.16-.162a9.63 9.63 0 0 0 0-1.38c-.004-.055-.05-.135-.161-.161l-1.45-.353c-.626-.152-1.08-.625-1.278-1.172a6.576 6.576 0 0 0-.248-.6 1.833 1.833 0 0 1 .074-1.734l.776-1.274c.06-.098.036-.186 0-.228a9.774 9.774 0 0 0-.976-.976c-.042-.036-.131-.06-.228 0l-1.275.776a1.831 1.831 0 0 1-1.733.074 6.88 6.88 0 0 0-.6-.249 1.835 1.835 0 0 1-1.173-1.278l-.351-1.45c-.027-.11-.107-.156-.162-.16a9.63 9.63 0 0 0-1.38 0Z"/></g></g></svg> Installation</template>
@@ -284,7 +288,7 @@
         <span>Installation</span>
     </h4>
 </doc-anchor-target>
-<p>Download and install <a href="https://github.com/Jaded-Encoding-Thaumaturgy/vs-preview">VSPreview</a> using <code v-pre>pip</code> in a terminal window:</p>
+<p>Download and install <a href="https://github.com/Jaded-Encoding-Thaumaturgy/vs-preview">VSPreview</a> using <code v-pre>pip</code> in your terminal:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-powershell"><code v-pre class="language-powershell">pip install vspreview</code></pre>
 </doc-codeblock></div>
@@ -307,13 +311,17 @@
        <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Initial script <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-red-600 bg-red-100 h-6 px-2 text-xs rounded-md">
     <span>Required</span>
 </span></template>
-<p>The basic <code v-pre>comp.vpy</code> script to get started. This script includes the required dependencies and features to run and get the best experience out of VSPreview.</p>
+<p>The basic <code v-pre>comp.vpy</code> script to get started. This script includes the required dependencies and features to run and get the best experience out of VSPreview for creating your comparisons.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-python"><code v-pre class="language-python">## Dependencies: Allows vspreview to run (required; do not remove)
 import vapoursynth as vs
 from vapoursynth import core
 from awsmfunc import FrameInfo
 from vspreview import set_output
+
+## &lt;Additional dependencies&gt;
+## Place any additional dependencies you want to use in your comp here
+## &lt;End of additional dependencies&gt;
 
 ## File paths: Hold shift and right-click your file, select copy as path, and paste it here
 clip1 = core.lsmas.LWLibavSource(r&quot;C:\Paste\File\Path\Here.mkv&quot;)
@@ -325,8 +333,9 @@ source1 = &quot;FirstSourceName&quot;
 source2 = &quot;SecondSourceName&quot;
 source3 = &quot;ThirdSourceName&quot;
 
-## Additional comp settings
-## Place any additional parameters you want to use in your comp here
+## &lt;Additional comp settings&gt;
+## Place any additional settings you want to use in your comp here
+## &lt;End of additional comp settings&gt;
 
 ## Frameinfo: Displays the frame number, type, and group name in the top left corner (no modification required; add/remove lines as needed)
 clip1 = FrameInfo(clip1, source1)
@@ -354,7 +363,7 @@ set_output(clip3, name=source3)</code></pre>
 <tbody>
 <tr>
 <td><strong>Dependencies</strong></td>
-<td>Dependencies required to run VSPreview</td>
+<td>Dependencies required to create comparisons in VSPreview</td>
 </tr>
 <tr>
 <td><strong>File paths</strong></td>
@@ -380,8 +389,8 @@ set_output(clip3, name=source3)</code></pre>
 </table>
 </div>
    </doc-panel>
-   <doc-panel id="playback-frame-rate-fieldbased-deinterlace" collapsed>
-       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M9.5 15.584V8.416a.5.5 0 0 1 .77-.42l5.576 3.583a.5.5 0 0 1 0 .842l-5.576 3.584a.5.5 0 0 1-.77-.42Z"/><path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm11-9.5A9.5 9.5 0 0 0 2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5Z"/></g></g></svg> Playback (frame rate, FieldBased, deinterlace)</template>
+   <doc-panel id="playback-frame-rate-fieldbased-inverse-telecine" collapsed>
+       <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M9.5 15.584V8.416a.5.5 0 0 1 .77-.42l5.576 3.583a.5.5 0 0 1 0 .842l-5.576 3.584a.5.5 0 0 1-.77-.42Z"/><path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm11-9.5A9.5 9.5 0 0 0 2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5Z"/></g></g></svg> Playback (frame rate, FieldBased, inverse telecine)</template>
 <doc-anchor-target id="frame-rate">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#frame-rate">#</doc-anchor-trigger>
@@ -403,20 +412,20 @@ clip3 = core.std.AssumeFPS(clip3, fpsnum=24000, fpsden=1000)</code></pre>
 </doc-anchor-target>
 <p>Tags the content as progressive (<code v-pre>0</code>) or interlaced (<code v-pre>1</code>/<code v-pre>2</code>). <em>This should be used for incorrectly tagged sources.</em></p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-python"><code v-pre class="language-python">## FieldBased: Sets the content as either progressive (0) or interlaced (1/2); required for progressive content tagged as interlaced
+<pre class="language-python"><code v-pre class="language-python">## FieldBased: Tags the content as progressive (0) or interlaced (1/2); used for progressive content incorrectly tagged as interlaced
 clip1 = core.std.SetFieldBased(clip1, 0)
 clip2 = core.std.SetFieldBased(clip2, 1)
 clip3 = core.std.SetFieldBased(clip3, 2)</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="deinterlace">
+<doc-anchor-target id="inverse-telecine">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#deinterlace">#</doc-anchor-trigger>
-        <span>Deinterlace</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#inverse-telecine">#</doc-anchor-trigger>
+        <span>Inverse Telecine</span>
     </h4>
 </doc-anchor-target>
-<p>Quick deinterlace filter for interlaced clips set in <doc-anchor-trigger to="#fieldbased">FieldBased</doc-anchor-trigger>.</p>
+<p>Quick inverse telecine filter for telecined clips set in <doc-anchor-trigger to="#fieldbased">FieldBased</doc-anchor-trigger>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-python"><code v-pre class="language-python">## Deinterlace: Convert interlaced video to progressive; use for clips marked interlaced in FieldBased
+<pre class="language-python"><code v-pre class="language-python">## Inverse telecine: Fixes telecined video; used for clips marked as interlaced in FieldBased
 clip1 = core.vivtc.VFM(clip1, 1)
 clip1 = core.vivtc.VDecimate(clip1)</code></pre>
 </doc-codeblock></div>
@@ -442,7 +451,7 @@ clip1 = core.vivtc.VDecimate(clip1)</code></pre>
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>16-bit is required for odd frame numbers. <doc-anchor-trigger to="#depth">Make sure you are using the 16-bit color depth.</doc-anchor-trigger></p>
+<p>16-bit is required for odd frame numbers. <doc-anchor-trigger to="#color-contrast-depth-tonemapping-range-gamma-matrix-drc">Make sure you are using the 16-bit color depth.</doc-anchor-trigger></p>
         </div>
     </div>
 </div>
@@ -459,11 +468,17 @@ clip3 = core.std.Crop(clip3, left=0, right=0, top=21, bottom=21)</code></pre>
     </h4>
 </doc-anchor-target>
 <p>Downscales or upscales the video. <em>This should be used to match multiple sources that have differing resolutions.</em></p>
+<p>You will first need to import the scaling dependency at the top of your script:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-python"><code v-pre class="language-python">## Scaling: Upscale/downscale clips to match; recommended to scale to the highest resolution
-clip1 = core.resize.Spline36(clip1, 1920, 1080)
-clip2 = core.resize.Spline36(clip2, 1920, 1080)
-clip3 = core.resize.Spline36(clip3, 3840, 2160)</code></pre>
+<pre class="language-python"><code v-pre class="language-python">## Scaling dependency: Allows for scaling filters to work (required)
+from vskernels import EwaLanczos</code></pre>
+</doc-codeblock></div>
+<p>After importing the necessary dependency, apply scaling:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">## Scaling: Upscale/downscale clips to match using EwaLanczos (equivalent scaling to mpv's high-quality profile); recommended to scale to the highest resolution (additional dependency required)
+clip1 = EwaLanczos.scale(clip1, 1920, 1080, sigmoid=True)
+clip2 = EwaLanczos.scale(clip2, 1920, 1080, sigmoid=True)
+clip3 = EwaLanczos.scale(clip2, 3840, 2160, sigmoid=True)</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="trimming">
     <h4>
@@ -513,7 +528,7 @@ clip3 = core.resize.Bicubic(clip3, format=vs.YUV444P16)</code></pre>
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>16-bit is required. <doc-anchor-trigger to="#depth">Make sure you are using the 16-bit color depth.</doc-anchor-trigger></p>
+<p>16-bit is required. <doc-anchor-trigger to="#color-contrast-depth-tonemapping-range-gamma-matrix-drc">Make sure you are using the 16-bit color depth.</doc-anchor-trigger></p>
         </div>
     </div>
 </div>
@@ -532,7 +547,7 @@ from awsmfunc.types.placebo import PlaceboTonemapOpts as TMopts</code></pre>
 <li>For converting DV (Dolby Vision) -&gt; SDR, set <code v-pre>source_colorspace=csp.DOVI</code></li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-python"><code v-pre class="language-python">## Tonemapping: Sets the source to a different tone map [16-bit required]
+<pre class="language-python"><code v-pre class="language-python">## Tonemapping: Sets the source to a different tone map [16-bit required] (additional dependencies required)
 ## Specify the arguments based on your sources; ideally try to get it as close as possible to the SDR source
 clip1args = TMopts(source_colorspace=csp.DOVI, target_colorspace=csp.SDR, tone_map_mode=TMmode.RGB, tone_map_function=TMfunc.ST2094_40, gamut_mode=GMTmode.Clip, peak_detect=True, use_dovi=True)
 clip2args = TMopts(source_colorspace=csp.HDR10, target_colorspace=csp.SDR, tone_map_mode=TMmode.RGB, tone_map_function=TMfunc.ST2094_40, gamut_mode=GMTmode.Clip, peak_detect=True, use_dovi=True)
@@ -540,7 +555,11 @@ clip3args = TMopts(source_colorspace=csp.HDR10, target_colorspace=csp.SDR, tone_
 ## Apply tonemapping
 clip1 = core.placebo.Tonemap(clip1, **clip1args.vsplacebo_dict())
 clip2 = core.placebo.Tonemap(clip2, **clip2args.vsplacebo_dict())
-clip3 = core.placebo.Tonemap(clip3, **clip3args.vsplacebo_dict())</code></pre>
+clip3 = core.placebo.Tonemap(clip3, **clip3args.vsplacebo_dict())
+## Retag video to 709 after tonemapping
+clip1 = core.std.SetFrameProps(clip1, _Matrix=1, _Transfer=1, _Primaries=1)
+clip2 = core.std.SetFrameProps(clip2, _Matrix=1, _Transfer=1, _Primaries=1)
+clip3 = core.std.SetFrameProps(clip3, _Matrix=1, _Transfer=1, _Primaries=1)</code></pre>
 </doc-codeblock></div>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
@@ -591,7 +610,7 @@ clip3 = core.resize.Bicubic(clip3, format=vs.YUV444P16, range=1)</code></pre>
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>16-bit is required. <doc-anchor-trigger to="#depth">Make sure you are using the 16-bit color depth.</doc-anchor-trigger></p>
+<p>16-bit is required. <doc-anchor-trigger to="#color-contrast-depth-tonemapping-range-gamma-matrix-drc">Make sure you are using the 16-bit color depth.</doc-anchor-trigger></p>
         </div>
     </div>
 </div>
@@ -656,7 +675,7 @@ clip3 = core.std.SetFrameProp(clip3, prop=&quot;_Matrix&quot;, intval=5)</code><
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>16-bit is required. <doc-anchor-trigger to="#depth">Make sure you are using the 16-bit color depth.</doc-anchor-trigger></p>
+<p>16-bit is required. <doc-anchor-trigger to="#color-contrast-depth-tonemapping-range-gamma-matrix-drc">Make sure you are using the 16-bit color depth.</doc-anchor-trigger></p>
         </div>
     </div>
 </div>
@@ -685,7 +704,7 @@ clip1 = core.std.SetFrameProp(clip1, prop=&quot;_ColorRange&quot;, intval=1)</co
 </doc-panels>
 <doc-panel id="full-script" collapsed>
     <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></g></g></svg> Full script</template>
-<p>The full <code v-pre>comp.vpy</code> script. This script includes the <doc-anchor-trigger to="#initial-script-badge-variant-danger-text-required">initial script</doc-anchor-trigger> and all of the additional filters mentioned above. <em>Comment/uncomment filters as needed.</em></p>
+<p>The full <code v-pre>comp.vpy</code> script. This script includes the <doc-anchor-trigger to="#initial-script-badge-variant-danger-text-required">initial script</doc-anchor-trigger> and all of the additional filters mentioned above. <em>Comment/uncomment parameters as needed.</em></p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-python"><code v-pre class="language-python">## Dependencies: Allows vspreview to run (required; do not remove)
 import vapoursynth as vs
@@ -693,12 +712,19 @@ from vapoursynth import core
 from awsmfunc import FrameInfo
 from vspreview import set_output
 
+## &lt;Additional dependencies&gt;
+
+## Scaling dependency: Allows for scaling filters to work (required)
+##from vskernels import EwaLanczos
+
 ## Tonemapping dependencies: Allows for tonemapping filters to work (required)
 ##from awsmfunc.types.placebo import PlaceboColorSpace as csp
 ##from awsmfunc.types.placebo import PlaceboTonemapMode as TMmode
 ##from awsmfunc.types.placebo import PlaceboTonemapFunction as TMfunc
 ##from awsmfunc.types.placebo import PlaceboGamutMode as GMTmode
 ##from awsmfunc.types.placebo import PlaceboTonemapOpts as TMopts
+
+## &lt;End of additional dependencies&gt;
 
 ## File paths: Hold shift and right-click your file, select copy as path, and paste it here
 clip1 = core.lsmas.LWLibavSource(r&quot;C:\Paste\File\Path\Here.mkv&quot;)
@@ -710,17 +736,19 @@ source1 = &quot;FirstSourceName&quot;
 source2 = &quot;SecondSourceName&quot;
 source3 = &quot;ThirdSourceName&quot;
 
+## &lt;Additional comp settings&gt;
+
 ## Frame rate: Change fps to match other sources (needed for when the previewer is unable to automatically keep them in sync)
 ##clip1 = core.std.AssumeFPS(clip1, fpsnum=24000, fpsden=1001)
 ##clip2 = core.std.AssumeFPS(clip2, fpsnum=25000, fpsden=1000)
 ##clip3 = core.std.AssumeFPS(clip3, fpsnum=24000, fpsden=1000)
 
-## FieldBased: Sets the content as either progressive (0) or interlaced (1/2); required for progressive content tagged as interlaced
+## FieldBased: Tags the content as progressive (0) or interlaced (1/2); used for progressive content incorrectly tagged as interlaced
 ##clip1 = core.std.SetFieldBased(clip1, 0)
 ##clip2 = core.std.SetFieldBased(clip2, 1)
 ##clip3 = core.std.SetFieldBased(clip3, 2)
 
-## Deinterlace: Convert interlaced video to progressive; use for clips marked interlaced in FieldBased
+## Inverse telecine: Fixes telecined video; used for clips marked as interlaced in FieldBased
 ##clip1 = core.vivtc.VFM(clip1, 1)
 ##clip1 = core.vivtc.VDecimate(clip1)
 
@@ -729,10 +757,10 @@ source3 = &quot;ThirdSourceName&quot;
 ##clip2 = core.std.Crop(clip2, left=0, right=0, top=276, bottom=276)
 ##clip3 = core.std.Crop(clip3, left=0, right=0, top=21, bottom=21)
 
-## Scaling: Upscale/downscale clips to match; recommended to scale to the highest resolution
-##clip1 = core.resize.Spline36(clip1, 1920, 1080)
-##clip2 = core.resize.Spline36(clip2, 1920, 1080)
-##clip3 = core.resize.Spline36(clip3, 3840, 2160)
+## Scaling: Upscale/downscale clips to match using EwaLanczos (equivalent scaling to mpv's high-quality profile); recommended to scale to the highest resolution (additional dependency required)
+##clip1 = EwaLanczos.scale(clip1, 1920, 1080, sigmoid=True)
+##clip2 = EwaLanczos.scale(clip2, 1920, 1080, sigmoid=True)
+##clip3 = EwaLanczos.scale(clip2, 3840, 2160, sigmoid=True)
 
 ## Trimming: Trim frames to match clips (calculate the frame difference and enter the number here)
 ##clip1 = clip1[0:]
@@ -744,7 +772,7 @@ source3 = &quot;ThirdSourceName&quot;
 ##clip2 = core.resize.Bicubic(clip2, format=vs.YUV444P16)
 ##clip3 = core.resize.Bicubic(clip3, format=vs.YUV444P16)
 
-## Tonemapping: Sets the source to a different tone map [16-bit required]
+## Tonemapping: Sets the source to a different tone map [16-bit required] (additional dependencies required)
 ## Specify the arguments based on your sources; ideally try to get it as close as possible to the SDR source
 ##clip1args = TMopts(source_colorspace=csp.DOVI, target_colorspace=csp.SDR, tone_map_mode=TMmode.RGB, tone_map_function=TMfunc.ST2094_40, gamut_mode=GMTmode.Clip, peak_detect=True, use_dovi=True)
 ##clip2args = TMopts(source_colorspace=csp.HDR10, target_colorspace=csp.SDR, tone_map_mode=TMmode.RGB, tone_map_function=TMfunc.ST2094_40, gamut_mode=GMTmode.Clip, peak_detect=True, use_dovi=True)
@@ -753,6 +781,10 @@ source3 = &quot;ThirdSourceName&quot;
 ##clip1 = core.placebo.Tonemap(clip1, **clip1args.vsplacebo_dict())
 ##clip2 = core.placebo.Tonemap(clip2, **clip2args.vsplacebo_dict())
 ##clip3 = core.placebo.Tonemap(clip3, **clip3args.vsplacebo_dict())
+## Retag video to 709 after tonemapping
+##clip1 = core.std.SetFrameProps(clip1, _Matrix=1, _Transfer=1, _Primaries=1)
+##clip2 = core.std.SetFrameProps(clip2, _Matrix=1, _Transfer=1, _Primaries=1)
+##clip3 = core.std.SetFrameProps(clip3, _Matrix=1, _Transfer=1, _Primaries=1)
 
 ## Color range: Marks the clip's range as limited (0) or full (1); DV clips will need to be set to limited (0) after tonemapping
 ##clip1 = core.resize.Bicubic(clip1, format=vs.YUV444P16, range=0)
@@ -780,6 +812,8 @@ source3 = &quot;ThirdSourceName&quot;
 ## Fix DRC: Repairs sources with very washed out colors
 ##clip1 = core.resize.Point(clip1, range_in=0, range=1, dither_type=&quot;error_diffusion&quot;)
 ##clip1 = core.std.SetFrameProp(clip1, prop=&quot;_ColorRange&quot;, intval=1)
+
+## &lt;End of additional comp settings&gt;
 
 ## Frameinfo: Displays the frame number, type, and group name in the top left corner (no modification required; add/remove lines as needed)
 clip1 = FrameInfo(clip1, source1)
@@ -841,7 +875,7 @@ set_output(clip3, name=source3)</code></pre>
 <tr>
 <td><img src="https://placehold.co/14x14/f5a97f/f5a97f.png" alt="#f5a97f" /> 2</td>
 <td>Timeline</td>
-<td>The video timeline and source/clip selection</td>
+<td>The video timeline, source/clip selection, settings, and section toggles</td>
 </tr>
 <tr>
 <td><img src="https://placehold.co/14x14/eed49f/eed49f.png" alt="#eed49f" /> 3</td>
@@ -881,6 +915,7 @@ set_output(clip3, name=source3)</code></pre>
 </tbody>
 </table>
 </div>
+<p>Want to jump straight to making comparisons? <em>See <doc-anchor-trigger to="#comparing">Comparing</doc-anchor-trigger>.</em></p>
 <doc-anchor-target id="misc">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#misc">#</doc-anchor-trigger>
@@ -1043,7 +1078,7 @@ set_output(clip3, name=source3)</code></pre>
         <span>Naming scheme</span>
     </h4>
 </doc-anchor-target>
-<p>When creating your comparison, we recommend naming it with the show title and sources used. Some examples are:</p>
+<p>When creating your comparison, we recommend naming it with the show title and sources used. This makes it easier for the user to understand what you are comparing. Some examples are:</p>
 <ul>
 <li>By video source: <code v-pre>The Eminence in Shadow - BD vs. WEB</code></li>
 <li>By release type: <code v-pre>Watashi no Oshi wa Akuyaku Reijou. - Minis vs. Streams</code></li>
@@ -1058,8 +1093,8 @@ set_output(clip3, name=source3)</code></pre>
         <span>Random</span>
     </h4>
 </doc-anchor-target>
-<p>The <em>Random</em> parameter sets the number of frames to skip before screenshotting. <em>This is a setting used when creating <doc-anchor-trigger to="#automatic-badge-variant-secondary-text-fastest-option">automatic</doc-anchor-trigger>/<doc-anchor-trigger to="#semi-automatic-badge-icon-variant-primary-text-recommended">semi-automatic</doc-anchor-trigger> comparisons.</em></p>
-<p>For example, a value of <code v-pre>48</code> means VSPreview will take a screenshot for every 48 frames in all sources.</p>
+<p>The <em>Random</em> parameter sets the number of frames to randomly capture during screenshotting. <em>This is a setting used when creating <doc-anchor-trigger to="#automatic-badge-variant-secondary-text-fastest-option">automatic</doc-anchor-trigger>/<doc-anchor-trigger to="#semi-automatic-badge-icon-variant-primary-text-recommended">semi-automatic</doc-anchor-trigger> comparisons.</em></p>
+<p>For example, a value of <code v-pre>48</code> means VSPreview will take 48 randomly selected frames from each source when generating the comparison.</p>
    </doc-panel>
    <doc-panel id="3-picture-type" collapsed>
        <template #title>3 - Picture type</template>
@@ -1099,7 +1134,7 @@ set_output(clip3, name=source3)</code></pre>
 </tr>
 <tr>
 <td><code v-pre>Delete After</code></td>
-<td>Sets the number of days for when the comparison will expire and be deleted from <a href="https://slow.pics">Slowpoke Pics</a></td>
+<td>Sets the number of days for when the comparison will expire and be deleted from <a href="https://slow.pics">Slowpoke Pics</a>. <em>By default, comparisons are deleted after two years of inactivity</em></td>
 </tr>
 </tbody>
 </table>
@@ -1157,7 +1192,7 @@ set_output(clip3, name=source3)</code></pre>
     </h3>
 </doc-anchor-target>
 <ul>
-<li><em><doc-anchor-trigger to="#2-frame-saving">Label your sources clearly to the user</doc-anchor-trigger></em></li>
+<li><em><doc-anchor-trigger to="#recommended-source-naming">Label your sources clearly to the user</doc-anchor-trigger></em></li>
 <li>Try to capture a large variety of scenes (e.g. low/high detail, bright/dark, low/high motion)</li>
 <li>Try to capture frames of the same type
 <ul>
@@ -1281,6 +1316,7 @@ set_output(clip3, name=source3)</code></pre>
 <li><p>Locate the frame(s) you want to compare</p>
 <ul>
 <li>By default, <code v-pre>Left arrow</code> and <code v-pre>Right arrow</code> navigates between frames</li>
+<li><em>See how to <doc-anchor-trigger to="#change-frame-increment">skip frames faster</doc-anchor-trigger></em></li>
 <li><em>See <doc-anchor-trigger to="#tips">tips</doc-anchor-trigger> on what you should look for</em></li>
 </ul>
 </li>
@@ -1342,6 +1378,7 @@ set_output(clip3, name=source3)</code></pre>
 <li><p>Locate the frame(s) you want to compare</p>
 <ul>
 <li>By default, <code v-pre>Left arrow</code> and <code v-pre>Right arrow</code> navigates between frames</li>
+<li><em>See how to <doc-anchor-trigger to="#change-frame-increment">skip frames faster</doc-anchor-trigger></em></li>
 <li><em>See <doc-anchor-trigger to="#tips">tips</doc-anchor-trigger> on what you should look for</em></li>
 </ul>
 </li>
@@ -1410,7 +1447,7 @@ set_output(clip3, name=source3)</code></pre>
 <doc-panels>
    <doc-panel id="recommended-source-naming" collapsed>
        <template #title>Recommended source naming</template>
-<p>You can name your sources in any way you&#x27;d like. However, we recommend trying to follow any of the naming schemes below for better clarity:</p>
+<p>You can name your sources in any way you&#x27;d like. However, we recommend naming your sources in a way that makes it easy to understand what you&#x27;re trying to compare the user:</p>
 <p><figure class="content-center">
     <img src="../../static/comparison/example-sources.png" alt="Example source names">
     <figcaption class="caption">Example source names</figcaption>
@@ -1454,13 +1491,16 @@ set_output(clip3, name=source3)</code></pre>
        <template #title>Change frame increment</template>
 <ul>
 <li>In VSPreview, navigate to the bottom bar and toggle the <em>Playback</em> section</li>
-<li>In <em>Playback</em>, set the number of frames to skip when scrubbing by adjusting the first field:</li>
+<li>In <em>Playback</em>, set the number of frames to skip (<em>n</em>) when scrubbing by adjusting the first field:</li>
 </ul>
 <p><figure class="content-center">
     <img src="../../static/comparison/vsp-playback-frames.png" alt="Adjust frames in the playback bar">
     <figcaption class="caption">Adjust frames in the playback bar</figcaption>
 </figure>
 </p>
+<ul>
+<li>To skip <em>n</em> frames backward/forward, press <code v-pre>Shift</code> + <code v-pre>Left arrow</code>/<code v-pre>Right arrow</code></li>
+</ul>
    </doc-panel>
    <doc-panel id="changing-the-screenshot-key" collapsed>
        <template #title>Changing the screenshot key</template>
@@ -1477,9 +1517,7 @@ set_output(clip3, name=source3)</code></pre>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-python"><code v-pre class="language-python">      self.main.add_shortcut(
           QKeyCombination(Qt.Modifier.SHIFT, Qt.Key.Key_S).toCombined(), self.save_frame_as_button.click
-      )
-``
-</code></pre>
+      )</code></pre>
 </doc-codeblock></div>
 </li>
 <li><p>Replace the lines with the following:</p>
@@ -1550,7 +1588,7 @@ set_output(clip3, name=source3)</code></pre>
 <li>Open your browser&#x27;s <strong>Developer Tools</strong>. You will need to get two values:
 <ul>
 <li>To get your <code v-pre>browserId</code>, go to <strong>Application</strong> -&gt; <strong>Storage</strong> -&gt; <strong>Local Storage</strong> -&gt; <code v-pre>https://slow.pics</code>. Copy the key listed there</li>
-<li>To get your <code v-pre>sessionId</code>, go to <strong>Network</strong> -&gt; slow.pics. Copy the key listed under <code v-pre>SLPSESSION</code></li>
+<li>To get your <code v-pre>sessionId</code>, go to <strong>Network</strong> -&gt; <code v-pre>slow.pics</code>. Copy the key listed under <code v-pre>SLPSESSION</code></li>
 </ul>
 </li>
 <li>In VSPreview, go to <strong>Settings</strong> -&gt; <strong>Comp</strong></li>
