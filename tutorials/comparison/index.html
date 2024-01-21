@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.759110918539">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.759112894351">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -32,12 +32,12 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.759110918539" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.759112894351" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.759110918539" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.759112894351" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.759110918539" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.759110918539" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.759112894351" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.759112894351" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -365,7 +365,7 @@ set_output(clip2, name=source2)
 set_output(clip3, name=source3)</code></pre>
 </doc-codeblock></div>
 <div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
+<table class="compact">
 <thead>
 <tr>
 <th>Section</th>
@@ -532,7 +532,7 @@ clip3 = Hermite.scale(clip3, 3840, 2160, linear=True)</code></pre>
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>Downscaling is generally not recommended. We suggest upscaling your sources to match the highest resolution unless you have a specific reason (e.g. comparing how a higher resolution file would compare on a lower resolution display).</p>
+<p>Downscaling is generally not recommended. We suggest upscaling your sources to match the highest resolution unless you have a specific reason (e.g. comparing how a higher resolution file would look on a lower resolution display).</p>
         </div>
     </div>
 </div>
@@ -653,7 +653,7 @@ clip3 = core.std.Levels(clip3, gamma=0.88, planes=0)</code></pre>
 <p>Sets the color gamut to fix the colors of your sources. This is most commonly used on sources you&#x27;re upscaling or 4K SDR content. <em>This should be used on sources with incorrect/missing metadata or colors that are off, particularly reds and greens.</em></p>
 <p>Generally:</p>
 <div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
+<table class="compact">
 <thead>
 <tr>
 <th>Type</th>
