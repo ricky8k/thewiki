@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.771992476542">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.772225460913">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -32,11 +32,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.771992476542" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.772225460913" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.771992476542" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.772225460913" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.771992476542" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.772225460913" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -159,43 +159,66 @@
 </doc-anchor-target>
 <p>When naming anime files, it&#x27;s important to note as much information as possible (though not <em>everything</em>). This allows any viewer to understand what the file contains, making it easy for viewers to differentiate it between other files and allow for compatibility with various tools, such as <a href="../../guides/playback/#media-servers">media servers</a>, <a href="../../sourcing/usenet/">Usenet</a>, <a href="/sorucing/ddl">XDCC</a>, etc.</p>
 <p>This page serves as a guide on the most optimal naming schemes that provide all the necessary details to users while ensuring the best compatibility with most automated setups.</p>
+<doc-anchor-target id="general">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#general">#</doc-anchor-trigger>
+        <span>General</span>
+    </h2>
+</doc-anchor-target>
+<p>In general, a good naming scheme should:</p>
+<ul>
+<li>Include the full <strong>anime show/series</strong> or <strong>movie title</strong>
+<ul>
+<li>If there are multiple versions of the series, you must include the year within the title (e.g. <a href="https://thetvdb.com/series/hunter-x-hunter">Hunter x Hunter (1999)</a> vs. <a href="https://thetvdb.com/series/hunter-x-hunter-2011">Hunter x Hunter (2011)</a>). <em>Note that you must include the year for all movies</em></li>
+<li>We recommend using names found in databases such as <a href="https://www.thetvdb.com">TheTVDB</a> (TV series) and <a href="https://www.themoviedb.org/?language=en-US">The Movie Database (TMDB)</a> (movies)</li>
+</ul>
+</li>
+<li>Include the <strong>source type</strong> (i.e. <code v-pre>BD</code>, <code v-pre>DVD</code>, <code v-pre>WEB</code>)
+<ul>
+<li>Append <code v-pre>Remux</code> if your file uses a Blu-ray/DVD remux (i.e. <code v-pre>BD Remux</code> or <code v-pre>DVD Remux</code>)</li>
+<li>For <code v-pre>WEB</code> releases, you may also include the source tag (e.g. <code v-pre>AMZN</code> for Amazon, <code v-pre>CR</code> for Crunchyroll, <code v-pre>DSNP</code> for Disney+, <code v-pre>NF</code> for Netflix)</li>
+</ul>
+</li>
+<li>Include the <strong>video resolution</strong> and <strong>scan type</strong>
+<ul>
+<li>Use <code v-pre>p</code> for progressive video (e.g. <code v-pre>1080p</code>, <code v-pre>720p</code>)</li>
+<li>Use <code v-pre>i</code> for interlaced video (e.g. <code v-pre>1080i</code>, <code v-pre>720i</code>)</li>
+</ul>
+</li>
+<li>Include the <strong>video and audio codec</strong>
+<ul>
+<li>If your file includes multiple audio tracks in different codecs, only list the default track&#x27;s codec</li>
+</ul>
+</li>
+<li>Include a <strong>releaser/group tag</strong></li>
+<li>Limit the use of special characters or characters that need to be escaped
+<ul>
+<li>We recommend sticking to alphanumeric characters (<code v-pre>A-Z</code>, <code v-pre>a-z</code>, <code v-pre>0-9</code>)</li>
+<li>Use <code v-pre>.</code> or <code v-pre>-</code> for delimiters</li>
+</ul>
+</li>
+</ul>
 <doc-anchor-target id="file-names">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#file-names">#</doc-anchor-trigger>
         <span>File Names</span>
     </h2>
 </doc-anchor-target>
-<p>In general, a good file name should include:</p>
+<p>In general, a good file name should:</p>
 <ul>
-<li>The full <strong>anime show/series</strong> or <strong>movie title</strong>
+<li>Follow the same <doc-anchor-trigger to="#general">general guidelines</doc-anchor-trigger> for naming</li>
+<li>Include the <strong>season/episode number</strong> (for TV series)
 <ul>
-<li>If there are multiple versions of the series, you must include the year within the title (e.g. <a href="https://thetvdb.com/series/hunter-x-hunter">Hunter x Hunter (1999)</a> vs. <a href="https://thetvdb.com/series/hunter-x-hunter-2011">Hunter x Hunter (2011)</a>). <em>Note that you must include the year for all movies</em></li>
-<li>We recommend using names found in databases such as <a href="https://www.thetvdb.com">TheTVDB</a> (TV series) and <a href="https://www.themoviedb.org/?language=en-US">The Movie Database (TMDB)</a> (movies)</li>
+<li>Use <code v-pre>SXXEXX</code> format (e.g. Season 2 Episode 10 = <code v-pre>S02E10</code>)</li>
+<li>Absolute episode numbers may be used together (e.g. <code v-pre>S02E10 - E22</code>), <em>but never by themselves</em></li>
+<li>For specials, use season 0 (<code v-pre>S00EXX</code>) for guaranteed automatic parsing and correct identification. <em>However, it is suggested to add an additional identifier such as including <code v-pre>OVA</code> or the episode title (i.e. <code v-pre>S00E01 - OVA Title</code>) to easily differentiate between episodes</em></li>
 </ul>
 </li>
-<li>The <strong>season/episode number</strong> (for TV series)
+<li>Include a <strong>releaser/group tag</strong>
 <ul>
-<li>For specials, use <code v-pre>S00EXX</code> for guaranteed automatic parsing and correct identification. <em>However, it is suggested to add an additional identifier such as including <code v-pre>OVA</code> or the episode title (i.e. <code v-pre>S00E01 - OVA Title</code>) to easily differentiate between episodes</em></li>
+<li>This should be placed at the start or end of the file name</li>
 </ul>
 </li>
-<li>The <strong>source type</strong> (i.e. <code v-pre>BD</code>, <code v-pre>DVD</code>, <code v-pre>WEB</code>)
-<ul>
-<li>Append <code v-pre>Remux</code> if your file uses a Blu-ray/DVD remux (i.e. <code v-pre>BD Remux</code> or <code v-pre>DVD Remux</code>)</li>
-<li>For <code v-pre>WEB</code> releases, you may also include the source tag (e.g. <code v-pre>AMZN</code> for Amazon, <code v-pre>CR</code> for Crunchyroll, <code v-pre>DSNP</code> for Disney+, <code v-pre>NF</code> for Netflix)</li>
-</ul>
-</li>
-<li>The <strong>video resolution</strong> and <strong>scan type</strong>
-<ul>
-<li>Use <code v-pre>p</code> for progressive video (e.g. <code v-pre>1080p</code>, <code v-pre>720p</code>)</li>
-<li>Use <code v-pre>i</code> for interlaced video (e.g. <code v-pre>1080i</code>, <code v-pre>720i</code>)</li>
-</ul>
-</li>
-<li>The <strong>video and audio codec</strong>
-<ul>
-<li>If your file includes multiple audio tracks in different codecs, only list the default track&#x27;s codec</li>
-</ul>
-</li>
-<li>The <strong>releaser/group tag</strong></li>
 </ul>
 <p><em>See <doc-anchor-trigger to="#recommended-schemes">Recommended Schemes</doc-anchor-trigger> for various formats to follow for your files.</em></p>
 <doc-anchor-target id="examples-of-bad-names">
@@ -275,7 +298,7 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>Spaces and special characters (i.e. apostrophes <code v-pre>'</code>, commas <code v-pre>,</code>) should be replaced with periods <code v-pre>.</code> instead.</p>
+<p>Spaces and commas <code v-pre>,</code> should be replaced with periods <code v-pre>.</code> instead. Apostrophes <code v-pre>'</code> should be omitted.</p>
         </div>
     </div>
 </div>
@@ -302,7 +325,7 @@
 </dd>
 <dt><img src="https://placehold.co/14x14/f5a97f/f5a97f.png" alt="#f5a97f" /> Season/episode number</dt>
 <dd>
-<p>The season and episode number</p>
+<p>The season and episode number, in <code v-pre>SXXEXX</code> format</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -316,7 +339,7 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>For specials, use <code v-pre>S00EXX</code> for guaranteed automatic parsing and correct identification. <em>However, it is suggested to add an additional identifier such as including <code v-pre>OVA</code> or the episode title (i.e. <code v-pre>S00E01.OVA.Title</code>) to easily differentiate between episodes</em></p>
+<p>For specials, use season 0 (<code v-pre>S00EXX</code>) for guaranteed automatic parsing and correct identification. <em>However, it is suggested to add an additional identifier such as including <code v-pre>OVA</code> or the episode title (i.e. <code v-pre>S00E01.OVA.Title</code>) to easily differentiate between episodes</em></p>
         </div>
     </div>
 </div>
@@ -338,7 +361,7 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>This should generally be skipped to avoid creating file paths larger than 256 characters, which may cause problems with various programs.</p>
+<p>This should generally be skipped to avoid creating file paths larger than 256 characters, which may cause problems with various programs</p>
         </div>
     </div>
 </div>
@@ -346,7 +369,26 @@
 <dt><img src="https://placehold.co/14x14/a6da95/a6da95.png" alt="#a6da95" /> Version number <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-yellow-900 bg-yellow-100 h-6 px-2 text-xs rounded-md">
     <span>Conditional</span>
 </span></dt>
-<dd>The version number for patched releases in <code v-pre>REPACKX</code> format, where <code v-pre>X</code> is the version number</dd>
+<dd>
+<p>The version number for patched releases in <code v-pre>REPACKX</code> format, where <code v-pre>X</code> is the version number</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>For marking repacks, omit the version number for v2 releases (i.e. v2 = <code v-pre>REPACK</code>). Otherwise, <code v-pre>X</code> is the version number minus one (e.g. v3 = <code v-pre>REPACK2</code>, v4 = <code v-pre>REPACK3</code>)</p>
+        </div>
+    </div>
+</div>
+</dd>
 <dt><img src="https://placehold.co/14x14/81c8be/81c8be.png" alt="#81c8be" /> Video resolution</dt>
 <dd>The vertical resolution of the file&#x27;s video. <em>We recommend using <a href="https://mediaarea.net/MediaInfo">MediaInfo</a> to find this information</em></dd>
 <dt><img src="https://placehold.co/14x14/91d7e3/91d7e3.png" alt="#91d7e3" /> Source type</dt>
@@ -450,7 +492,7 @@
 </dd>
 <dt><img src="https://placehold.co/14x14/eed49f/eed49f.png" alt="#eed49f" /> Season/episode number</dt>
 <dd>
-<p>The season and episode number</p>
+<p>The season and episode number, in <code v-pre>SXXEXX</code> format</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -464,7 +506,7 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>For specials, use <code v-pre>S00EXX</code> for guaranteed automatic parsing and correct identification. <em>However, it is suggested to add an additional identifier such as including <code v-pre>OVA</code> or the episode title (i.e. <code v-pre>S00E01 - OVA Title</code>) to easily differentiate between episodes</em></p>
+<p>For specials, use season 0 (<code v-pre>S00EXX</code>) for guaranteed automatic parsing and correct identification. <em>However, it is suggested to add an additional identifier such as including <code v-pre>OVA</code> or the episode title (i.e. <code v-pre>S00E01 - OVA Title</code>) to easily differentiate between episodes</em></p>
         </div>
     </div>
 </div>
@@ -490,7 +532,7 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>This should generally be skipped to avoid creating file paths larger than 256 characters, which may cause problems with various programs.</p>
+<p>This should generally be skipped to avoid creating file paths larger than 256 characters, which may cause problems with various programs</p>
         </div>
     </div>
 </div>
@@ -562,10 +604,15 @@
 </doc-anchor-target>
 <p>In general, a good folder should:</p>
 <ul>
-<li>List the <strong>season number(s)</strong> (for TV series)
+<li>List the <strong>season number</strong> (for TV series)
 <ul>
-<li>If you are organizing multiple seasons, these should be separated and named by season (e.g. <code v-pre>Season 1</code>, <code v-pre>Season 2</code>, ...)</li>
+<li>Use <code v-pre>SXX</code> format (e.g. <code v-pre>S01</code>, <code v-pre>S02</code>)</li>
 <li>If a season is split into two cours but stored in a single season (e.g. <a href="https://thetvdb.com/series/eighty-six/seasons/official/1">86: Eighty Six</a>), include the episode range after the season info (e.g. <code v-pre>86: Eighty Six - S01E01-E11)</code> and <code v-pre>86: Eighty Six - S01E12-E23)</code>)</li>
+</ul>
+</li>
+<li><strong>Not include mutliple seasons.</strong> These are not supported by automation and cannot be cross-seeded
+<ul>
+<li>If you are including a few specials, or the special is important (e.g. finale), you may want to include it in the same torrent. <em>Otherwise, you should create a separate torrent</em></li>
 </ul>
 </li>
 <li>Store <strong>specials/OVA episodes</strong> in a separate folder named <code v-pre>Specials</code></li>
@@ -610,11 +657,6 @@ Anime.Name.2022.S01.E12-E23.1080p.BluRay.FLAC2.0.H.265-Group</code></pre>
 <p>In general, a good Nyaa release should:</p>
 <ul>
 <li>Follow the same guidelines for <doc-anchor-trigger to="#folders">folders</doc-anchor-trigger></li>
-<li><strong>Not include mutliple seasons.</strong> These are not supported by automation and cannot be cross-seeded
-<ul>
-<li>If you are including a few specials, or the special is important (e.g. finale), you may want to include it in the same torrent. <em>Otherwise, you should create a separate torrent</em></li>
-</ul>
-</li>
 <li>Additional aliases at the end of the title for better searching (e.g. alternate show titles, <code v-pre>Season X (SXX)</code>)</li>
 <li>A raw link to <a href="https://mediaarea.net/en/MediaInfo">MediaInfo</a> information
 <ul>
