@@ -19,7 +19,7 @@ VapourSynth is an open-source video processing framework. It handles all of your
 #### Dependencies
 
 - [Python 3.12.x](https://www.python.org/downloads/) - *Download the latest 3.12 version at the bottom and select `Add python.exe to PATH` during installation*
-- [Git](https://gitforwindows.org/) - *Spam next during installation*
+- [Git](https://gitforwindows.org/) - *During installation, click `Next` on every prompt*
 
 #### Installation
 
@@ -387,17 +387,25 @@ vspreview "C:\path\to\comp.py"
 
 ## First-time Setup
 
-1. Drag the *Plugins* menu from the right-side of the VSPreview window and open the *SlowPics Comps* tab. Alternatively, you can access the *Plugins* menu using `Ctrl+P`
+If this is your first-time running VSPreview, we suggest you perform the following:
 
-2. Under *Settings*, set the following:
-   - Set *Collection Name Template* to `{tmdb_title} ({tmdb_year}) - S01E01 - {video_nodes}`
-   - Set *Compression Type* to `Slow`
-   - Enter your [slow.pics](https://slow.pics) username and password (optional)
-   - Tick the *Public Flag*
+1. Open the *Plugins* menu -> *SlowPics Comps* -> *Settings*. Alternatively, you can access the *Plugins* menu using `Ctrl` + `P`
 
-3. Click the *Settings* button on the bottom tab. Under *Main*, change *Save Plugins Bar Position* to `Global`
+2. Under *Settings*:
+   - Set the naming scheme used for comparisons under *Collection Name Template*. We recommend `{tmdb_title} ({tmdb_year}) - S01E01 - {video_nodes}`
+   - Set the *Compression Type*. We recommend `Slow` for the best results
+   - Enter your [slow.pics](https://slow.pics) username and password to save comparisons under your account (optional)
+   - Tick the *Public Flag* to make your comparison show up on collections (optional)
 
-4. Click the *Playback* button on the bottom tab. Set the bottom-left value to an odd number (e.g `109`)
+   ![SlowPics Comps settings](/static/comparison/first-time-settings-1.png)
+
+3. Open *Settings* -> *Main* and change *Save Plugins Bar Position* to `Global`
+
+   ![VSPreview settings](/static/comparison/first-time-settings-2.png)
+
+4. Open the *Playback* menu and set *Seek N Frames Step* to an odd number (e.g `109`)
+
+   ![Playback settings](/static/comparison/first-time-settings-3.png)
 
 Once complete, close and relaunch VSPreview to apply these changes.
 
@@ -407,13 +415,13 @@ Once complete, close and relaunch VSPreview to apply these changes.
 
 For the purpose of making comparisons, you will only need the following binds:
 
-Key                        | Action
----------------------------|------------------------------------------------------------------
-`PgDown` or `Shift`+`Left` | Moves back *n* frames (default: *n = 1*)
-`PgUp` or `Shift`+`Right`  | Moves forward *n* frames (default: *n = 1*)
-`Number keys`              | Switches to source *n* (e.g. `2` switches to the second source)
-`Ctrl`+`Space`             | Marks the current frame number
-`Ctrl`+`P`                 | Opens the plugins window
+Key                          | Action
+-----------------------------|------------------------------------------------------------------
+`PgDown` or `Shift` + `Left` | Moves back *n* frames (default: *n = 1*)
+`PgUp` or `Shift` + `Right`  | Moves forward *n* frames (default: *n = 1*)
+`Number keys`                | Switches to source *n* (e.g. `2` switches to the second source)
+`Ctrl`+`Space`               | Marks the current frame number
+`Ctrl`+`P`                   | Opens the plugins window
 
 !!!
 If you wish to manually set your keybinds, you can find them under *Settings* -> *Shortcuts*.
