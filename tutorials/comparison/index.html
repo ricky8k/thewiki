@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.786176177217">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.786179105480">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -32,12 +32,12 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.6.0.786176177217" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.6.0.786179105480" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.786176177217" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.786179105480" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.786176177217" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.6.0.786176177217" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.786179105480" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.6.0.786179105480" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -181,7 +181,7 @@
 </doc-anchor-target>
 <ul>
 <li><a href="https://www.python.org/downloads/">Python 3.12.x</a> - <em>Download the latest 3.12 version at the bottom and select <code v-pre>Add python.exe to PATH</code> during installation</em></li>
-<li><a href="https://gitforwindows.org/">Git</a> - <em>Spam next during installation</em></li>
+<li><a href="https://gitforwindows.org/">Git</a> - <em>During installation, click <code v-pre>Next</code> on every prompt</em></li>
 </ul>
 <doc-anchor-target id="installation">
     <h4>
@@ -774,20 +774,24 @@ clip1 = core.resize.Point(clip1, range_in=1, range=0, dither_type=&quot;error_di
         <span>First-time Setup</span>
     </h2>
 </doc-anchor-target>
+<p>If this is your first-time running VSPreview, we suggest you perform the following:</p>
 <ol>
-<li><p>Drag the <em>Plugins</em> menu from the right-side of the VSPreview window and open the <em>SlowPics Comps</em> tab. Alternatively, you can access the <em>Plugins</em> menu using <code v-pre>Ctrl+P</code></p>
+<li><p>Open the <em>Plugins</em> menu -&gt; <em>SlowPics Comps</em> -&gt; <em>Settings</em>. Alternatively, you can access the <em>Plugins</em> menu using <code v-pre>Ctrl</code> + <code v-pre>P</code></p>
 </li>
-<li><p>Under <em>Settings</em>, set the following:</p>
+<li><p>Under <em>Settings</em>:</p>
 <ul>
-<li>Set <em>Collection Name Template</em> to <code v-pre>{tmdb_title} ({tmdb_year}) - S01E01 - {video_nodes}</code></li>
-<li>Set <em>Compression Type</em> to <code v-pre>Slow</code></li>
-<li>Enter your <a href="https://slow.pics">slow.pics</a> username and password (optional)</li>
-<li>Tick the <em>Public Flag</em></li>
+<li>Set the naming scheme used for comparisons under <em>Collection Name Template</em>. We recommend <code v-pre>{tmdb_title} ({tmdb_year}) - S01E01 - {video_nodes}</code></li>
+<li>Set the <em>Compression Type</em>. We recommend <code v-pre>Slow</code> for the best results</li>
+<li>Enter your <a href="https://slow.pics">slow.pics</a> username and password to save comparisons under your account (optional)</li>
+<li>Tick the <em>Public Flag</em> to make your comparison show up on collections (optional)</li>
 </ul>
+<p><img src="../../static/comparison/first-time-settings-1.png" alt="SlowPics Comps settings" /></p>
 </li>
-<li><p>Click the <em>Settings</em> button on the bottom tab. Under <em>Main</em>, change <em>Save Plugins Bar Position</em> to <code v-pre>Global</code></p>
+<li><p>Open <em>Settings</em> -&gt; <em>Main</em> and change <em>Save Plugins Bar Position</em> to <code v-pre>Global</code></p>
+<p><img src="../../static/comparison/first-time-settings-2.png" alt="VSPreview settings" /></p>
 </li>
-<li><p>Click the <em>Playback</em> button on the bottom tab. Set the bottom-left value to an odd number (e.g <code v-pre>109</code>)</p>
+<li><p>Open the <em>Playback</em> menu and set <em>Seek N Frames Step</em> to an odd number (e.g <code v-pre>109</code>)</p>
+<p><img src="../../static/comparison/first-time-settings-3.png" alt="Playback settings" /></p>
 </li>
 </ol>
 <p>Once complete, close and relaunch VSPreview to apply these changes.</p>
@@ -814,11 +818,11 @@ clip1 = core.resize.Point(clip1, range_in=1, range=0, dither_type=&quot;error_di
 </thead>
 <tbody>
 <tr>
-<td><code v-pre>PgDown</code> or <code v-pre>Shift</code>+<code v-pre>Left</code></td>
+<td><code v-pre>PgDown</code> or <code v-pre>Shift</code> + <code v-pre>Left</code></td>
 <td>Moves back <em>n</em> frames (default: <em>n = 1</em>)</td>
 </tr>
 <tr>
-<td><code v-pre>PgUp</code> or <code v-pre>Shift</code>+<code v-pre>Right</code></td>
+<td><code v-pre>PgUp</code> or <code v-pre>Shift</code> + <code v-pre>Right</code></td>
 <td>Moves forward <em>n</em> frames (default: <em>n = 1</em>)</td>
 </tr>
 <tr>
